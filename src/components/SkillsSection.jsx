@@ -3,21 +3,21 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend Skills
-  { name: "HTML/CSS", level: 85, category: "Frontend" },
-  { name: "JavaScript", level: 85, category: "Frontend" },
-  { name: "React", level: 20, category: "Frontend" },
-  { name: "Vue.js", level: 20, category: "Frontend" },
-  { name: "Tailwind CSS", level: 85, category: "Frontend" },
-  { name: "Typescript", level: 20, category: "Frontend" },
+  { name: "HTML/CSS", category: "Frontend" },
+  { name: "JavaScript", category: "Frontend" },
+  { name: "React", category: "Frontend" },
+  { name: "Vue.js", category: "Frontend" },
+  { name: "Tailwind CSS", category: "Frontend" },
+  { name: "Typescript", category: "Frontend" },
   // Backend Skills
-  { name: "Mysql", level: 85, category: "Backend" },
-  { name: "PHP", level: 20, category: "Backend" },
-  { name: "Laravel", level: 20, category: "Backend" },
+  { name: "Mysql", category: "Backend" },
+  { name: "PHP", category: "Backend" },
+  { name: "Laravel", category: "Backend" },
   // Tools
-  { name: "Git/Github", level: 85, category: "Tools" },
-  { name: "Vs Code", level: 85, category: "Tools" },
-  { name: "Figma", level: 20, category: "Tools" },
-  { name: "Adobe Photoshop", level: 20, category: "Tools" },
+  { name: "Git/Github", category: "Tools" },
+  { name: "Vs Code", category: "Tools" },
+  { name: "Figma", category: "Tools" },
+  { name: "Adobe Photoshop", category: "Tools" },
 ];
 
 const categories = ["all", "Frontend", "Backend", "Tools"];
@@ -25,7 +25,7 @@ const categories = ["all", "Frontend", "Backend", "Tools"];
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredSKills = skills.filter(
+  const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
 
@@ -54,26 +54,14 @@ export const SkillsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSKills.map((skill, key) => (
+          {filteredSkills.map((skill, key) => (
             <div
               key={key}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
-              </div>
+              <h3 className="font-semibold text-lg text-center">
+                {skill.name}
+              </h3>
             </div>
           ))}
         </div>

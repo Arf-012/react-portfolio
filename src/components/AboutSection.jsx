@@ -10,25 +10,24 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
-            </h3>
+            <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
 
             <p className="text-muted-foreground">
-              With over 2 years of hands-on experience in building modern,
-              responsive websites and applications, my mission is to bridge
-              design and functionality through clean, efficient code. I believe
-              that a great digital product starts with empathy for the user, and
-              I aim to create experiences that are not just usable, but
-              memorable.
+              I am a Junior Software Engineer focused on building modern,
+              responsive websites and web applications. I specialize in
+              transforming design into clean and efficient code
+              that delivers smooth user experiences. Every project I approach
+              is driven by clarity, structure, and a strong understanding of
+              user needs.
             </p>
 
             <p className="text-muted-foreground">
-              My vision is to continuously grow as a developer and contribute to
-              meaningful projects that solve real-world problems. I strive to
-              stay at the forefront of front-end innovation, collaborate with
-              diverse teams, and eventually lead creative development that
-              impacts people on a global scale.
+              I am dedicated to creating impactful digital products that solve
+              real-world problems. I work well in collaborative environments,
+              adapt quickly to new technologies, and strive to deliver solutions
+              that are both functional and user-centered. My goal is to
+              contribute to meaningful work that combines innovation with
+              purpose.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -53,12 +52,11 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                        Web Development
-                    </h4>
-                    <p className="text-muted-foreground">
-                        Creating responsive, user-friendly websites and web applications with modern frameworks.
-                    </p>
+                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <p className="text-muted-foreground">
+                    Creating responsive, user-friendly websites and web
+                    applications with modern frameworks.
+                  </p>
                 </div>
               </div>
             </div>
@@ -69,12 +67,11 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                        Web Development
-                    </h4>
-                    <p className="text-muted-foreground">
-                        Creating responsive, user-friendly websites and web applications with modern frameworks.
-                    </p>
+                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <p className="text-muted-foreground">
+                    Crafting visually engaging experiences that prioritize
+                    accessibility for all users.
+                  </p>
                 </div>
               </div>
             </div>
@@ -85,12 +82,13 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                        Web Development
-                    </h4>
-                    <p className="text-muted-foreground">
-                        Creating responsive, user-friendly websites and web applications with modern frameworks.
-                    </p>
+                  <h4 className="font-semibold text-lg">
+                    Project Collaboration
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Coordinating with teams to deliver polished
+                    web applications on time and within scope.
+                  </p>
                 </div>
               </div>
             </div>
