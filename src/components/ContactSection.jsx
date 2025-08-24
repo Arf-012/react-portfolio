@@ -16,7 +16,7 @@ import { useState } from "react";
 export const ContactSection = () => {
 
   const { toast } = useToast();
-  const {isSubmitting, setIsSubmitting} = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -180,7 +180,6 @@ export const ContactSection = () => {
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
-                Send Message
                 <Send size={16} />
               </button>
             </form>
